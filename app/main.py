@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Welcome to the pollution polling app! Tagged as latest."
+    return "Welcome to the pollution polling app! Do I build or restart?."
     #return check_poll()
 
 @app.route("/chow")
