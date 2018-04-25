@@ -5,7 +5,7 @@ def poll_check():
     from bs4 import BeautifulSoup
 
     url = 'http://aqicn.org/city/vietnam/ho-chi-minh-city/us-consulate/'
-    article = Article(url)
+    article = Article(url, memoize_articles=False)
     article.download()
     mydoc = article.html
 
